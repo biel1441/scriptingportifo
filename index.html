@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Roblox Scripter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: white;
+        }
+        header {
+            background: #161b22;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid #58a6ff;
+        }
+        .projects, .skills, .contact {
+            margin-top: 30px;
+        }
+        .projects, .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: #21262d;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .contact a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+        .back-button {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #58a6ff;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            background: #21262d;
+            border-radius: 5px;
+            width: 200px;
+            margin: 20px auto;
+        }
+        .back-button:hover {
+            background: #30363d;
+        }
+    </style>
+</head>
+<body>
+    <header>Portfolio - Roblox Scripter</header>
+    <div class="container">
+        <div class="profile">
+            <img src="Minha Foto.PNG" alt="Minha Foto.PNG">
+            <h2>Gabriel Brollo</h2>
+            <p>Scripter for Roblox Studio | Experience with Lua</p>
+        </div>
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="card"><h4>Lua</h4><p>Advanced programming in Lua for Roblox Studio.</p></div>
+            <div class="card"><h4>OOP</h4><p>Use of Object Oriented Programming in Scripts.</p></div>
+            <div class="card"><h4>AI</h4><p> Implementation of artificial intelligence for NPCs.</p></div>
+        </div>
+
+        <h3>Past Works:</h3>
+        <div class="projects">
+        <div class="card" onclick="window.location.href='video.html?video=AI.MP4'">
+   	 <h4>AI | Boss System</h4>
+   	 <p>Check Video</p>
+	</div>
+
+	<div class="card" onclick="window.location.href='video.html?video=Inventory.MP4'">
+    	<h4>Inventory | Accessories System</h4>
+    	<p>Check Video</p>
+	</div>
+
+	<div class="card" onclick="window.location.href='video.html?video=Dashes.MP4'">
+    	<h4>Dash System</h4>
+    	<p>Check Video</p>
+	</div>
+
+	<div class="card" onclick="window.location.href='video.html?video=Quests.MP4'">
+    	<h4>Quests System | Daily / Weekly</h4>
+    	<p>Check Video</p>
+	</div>
+
+
+            <!-- Você pode adicionar mais projetos aqui -->
+        </div>
+
+        <div class="contact">
+   	 <a href="https://discord.com/users/1050922010051620924" class="back-button">Contact</a>
+	</div>
+
+    </div>
+</body>
+</html>
